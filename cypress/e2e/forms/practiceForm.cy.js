@@ -1,4 +1,5 @@
 const practiceFormPage = require('../../pages/practiceFormPage')
+const studentData = require('../../fixtures/studentData.json')
 
 describe('Practice Form', () => {
 
@@ -8,14 +9,7 @@ describe('Practice Form', () => {
 
   it('should submit the student form successfully', () => {
 
-    const student = {
-      firstName: 'Aurelio',
-      lastName: 'Gonzalez',
-      email: 'aurelio@test.com',
-      mobile: '5512345678'
-    }
-
-    practiceFormPage.fillStudentForm(student)
+    practiceFormPage.fillStudentForm(studentData.validStudent)
 
     practiceFormPage.submitForm()
 

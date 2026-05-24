@@ -4,6 +4,8 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "https://demoqa.com",
 
+    scrollBehavior: 'center',
+
     viewportWidth: 1440,
     viewportHeight: 900,
 

@@ -1,0 +1,16 @@
+{
+  "validStudent": {
+    "firstName": "Aurelio",
+    "lastName": "Gonzalez",
+    "email": "aurelio@test.com",
+    "mobile": "5212345678"
+  },
+  "employeeData": {
+    "firstName": "Juan",
+    "lastName": "Dimas",
+    "email": "juan.dimas@test.com",
+    "age": "30",
+    "salary": "5000",
+    "department": "QA"
+  }
+}

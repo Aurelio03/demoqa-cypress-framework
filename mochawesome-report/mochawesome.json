@@ -1,0 +1,119 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2026-05-24T19:35:17.927Z",
+    "end": "2026-05-24T19:35:23.557Z",
+    "duration": 5630,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1bdc6fb4-0ba1-44d7-8bf0-edc4f8ea78a5",
+      "title": "",
+      "fullFile": "cypress\\e2e\\forms\\practiceForm.cy.js",
+      "file": "cypress\\e2e\\forms\\practiceForm.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7cd818da-3801-4919-9f63-54d94fb7eb07",
+          "title": "Practice Form",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should submit the student form successfully",
+              "fullTitle": "Practice Form should submit the student form successfully",
+              "timedOut": null,
+              "duration": 3082,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "practiceFormPage.fillStudentForm(studentData.validStudent);\npracticeFormPage.submitForm();\npracticeFormPage.validateSuccessfulSubmission();",
+              "err": {},
+              "uuid": "8fe34afd-b487-477c-ad95-4e712b0881fb",
+              "parentUUID": "7cd818da-3801-4919-9f63-54d94fb7eb07",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should keep the form open when required fields are missing",
+              "fullTitle": "Practice Form should keep the form open when required fields are missing",
+              "timedOut": null,
+              "duration": 2425,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "practiceFormPage.submitForm();\ncy.get(practiceFormPage.selectors.successModal).should('not.exist');\ncy.get(practiceFormPage.selectors.firstNameInput).should('have.css', 'border-color');",
+              "err": {},
+              "uuid": "18b5b239-1376-4338-8521-02bd32bacc11",
+              "parentUUID": "7cd818da-3801-4919-9f63-54d94fb7eb07",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8fe34afd-b487-477c-ad95-4e712b0881fb",
+            "18b5b239-1376-4338-8521-02bd32bacc11"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5507,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.4"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.3.2"
+    }
+  }
+}
