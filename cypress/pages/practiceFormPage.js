@@ -1,13 +1,7 @@
+const selectors = require('../locators/practiceFormLocators');
+
 class PracticeFormPage {
-  selectors = {
-    firstNameInput: '#firstName',
-    lastNameInput: '#lastName',
-    emailInput: '#userEmail',
-    maleGenderRadio: 'label[for="gender-radio-1"]',
-    mobileInput: '#userNumber',
-    submitButton: '#submit',
-    successModal: '.modal-content'
-  }
+  selectors = selectors
 
   visit() {
     cy.visit('/automation-practice-form')

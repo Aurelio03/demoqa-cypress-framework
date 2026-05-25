@@ -1,16 +1,7 @@
+const selectors = require('../locators/webTablesLocators');
+
 class WebTablesPage {
-  selectors = {
-    addButton: '#addNewRecordButton',
-    firstNameInput: '#firstName',
-    lastNameInput: '#lastName',
-    emailInput: '#userEmail',
-    ageInput: '#age',
-    salaryInput: '#salary',
-    departmentInput: '#department',
-    submitButton: '#submit',
-    tableRows: '.rt-tr-group',
-    deleteButton: '[title="Delete"]'
-  }
+  selectors = selectors
 
   visit() {
     cy.visit('/webtables')
