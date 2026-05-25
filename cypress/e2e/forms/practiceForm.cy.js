@@ -1,31 +1,31 @@
-const practiceFormPage = require('../../pages/practiceFormPage')
-const studentData = require('../../fixtures/studentData.json')
+const practiceFormPage = require('../../pages/practiceFormPage');
+const testData = require('../../fixtures/testData.json');
 
 describe('Practice Form', () => {
 
   beforeEach(() => {
-    practiceFormPage.visit()
+    practiceFormPage.visit();
   })
 
   it('should submit the student form successfully', () => {
 
-    practiceFormPage.fillStudentForm(studentData.validStudent)
+    practiceFormPage.fillStudentForm(testData.validStudent);
 
-    practiceFormPage.submitForm()
+    practiceFormPage.submitForm();
 
-    practiceFormPage.validateSuccessfulSubmission()
+    practiceFormPage.validateSuccessfulSubmission();
 
   })
 
   it('should keep the form open when required fields are missing', () => {
 
-    practiceFormPage.submitForm()
+    practiceFormPage.submitForm();
 
     cy.get(practiceFormPage.selectors.successModal)
-      .should('not.exist')
+      .should('not.exist');
 
     cy.get(practiceFormPage.selectors.firstNameInput)
-      .should('have.css', 'border-color')
+      .should('have.css', 'border-color');
 
   })
 
