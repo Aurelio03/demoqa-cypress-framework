@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2026-05-25T23:09:19.954Z",
-    "end": "2026-05-25T23:09:28.417Z",
-    "duration": 8463,
+    "start": "2026-05-25T23:19:43.785Z",
+    "end": "2026-05-25T23:19:50.067Z",
+    "duration": 6282,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "817a9297-034f-4f75-92c1-6dcf7219bc98",
+      "uuid": "68d2cc04-dd71-40d0-9ac9-6f0cd8786bad",
       "title": "",
       "fullFile": "cypress\\e2e\\tables\\webTables.cy.js",
       "file": "cypress\\e2e\\tables\\webTables.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "e97106d9-8a9e-4573-b900-14070bdd4bd9",
+          "uuid": "fd77c96d-ae6f-4476-a9fd-e70089179190",
           "title": "Web Tables",
           "fullFile": "",
           "file": "",
@@ -38,17 +38,17 @@
               "title": "should add a new record successfully",
               "fullTitle": "Web Tables should add a new record successfully",
               "timedOut": null,
-              "duration": 7652,
+              "duration": 4486,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "webTablesPage.addNewRecord(testData.employeeData);\nwebTablesPage.validateRecordExists(testData.employeeData.email);",
               "err": {},
-              "uuid": "51813573-db13-47af-b394-92cd40c77dda",
-              "parentUUID": "e97106d9-8a9e-4573-b900-14070bdd4bd9",
+              "uuid": "92127090-2c7b-45e6-ba73-4c0b39e9ac54",
+              "parentUUID": "fd77c96d-ae6f-4476-a9fd-e70089179190",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should delete an existing record",
               "fullTitle": "Web Tables should delete an existing record",
               "timedOut": null,
-              "duration": 718,
+              "duration": 1503,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "webTablesPage.deleteRecord();\nwebTablesPage.validateRecordDeleted('cierra@example.com');",
               "err": {},
-              "uuid": "26c5f395-89e9-4d16-84a2-8c36fdfc7e9e",
-              "parentUUID": "e97106d9-8a9e-4573-b900-14070bdd4bd9",
+              "uuid": "f390da8a-c762-4f16-8a72-48b1eff70f20",
+              "parentUUID": "fd77c96d-ae6f-4476-a9fd-e70089179190",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "51813573-db13-47af-b394-92cd40c77dda",
-            "26c5f395-89e9-4d16-84a2-8c36fdfc7e9e"
+            "92127090-2c7b-45e6-ba73-4c0b39e9ac54",
+            "f390da8a-c762-4f16-8a72-48b1eff70f20"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8370,
+          "duration": 5989,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
